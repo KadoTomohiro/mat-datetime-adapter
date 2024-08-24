@@ -1,0 +1,9 @@
+<input
+  type="text"
+  class="pickerBinder"
+  [matDatepicker]="picker"
+  [ngModel]="date"
+  (ngModelChange)="onModelChange($event)"
+>
+<button (click)="picker.open()">Open</button>
+<mat-datepicker #picker></mat-datepicker>
